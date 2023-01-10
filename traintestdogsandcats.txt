@@ -1,0 +1,17 @@
+seed(1)
+proportion = 0.2
+dbFile = "CatsAndDogs/"
+srcFile = "train/"
+
+for file in listdir(srcFile):
+    src = srcFile + "/" + file
+    dbSplit = "dbTrain/"
+    if random() < proportion:
+        dbSplit = "dbTest/"
+    if file.startswith("cat"):
+        db = dbFile + dbSplit + "cats/" + file
+        copyfile(src, db)
+
+    elif file.startswith("dog"):
+        db = dbFile + dbSplit + "dogs/" + file
+        copyfile(src, db)
