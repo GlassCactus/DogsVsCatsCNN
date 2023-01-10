@@ -1,0 +1,21 @@
+# DogsVsCatsCNN
+Creates an image classifier with Keras and TensorFlow that can differentiate between pictures of Cats and Dogs with an accuracy of 80%
+
+Library versions used -
+
+numpy 1.19.2
+keras 2.4.3
+matplotlib 3.3.2
+tensorflow 2.3.0
+h5py 2.10.0
+
+To download the h5py library
+Go to the Anaconda directory and type in:
+
+conda install -c conda-forge h5py
+
+The actual CNN model labeled (DogsVsCatCNN) is in the folder as a Jupyter file and a .py file.
+The DogsVsCatCNN.py file can just be opened on any compiler (PyCharm, Spyder, etc.)
+
+The Predict.py file had issues as a Jupyter file, so I left it as is. To run it, you can open it in any python compiler. Instructions on how to use the 
+cat vs dog predictor is written in the .py file. Do not remove anything outside of this folder.
